@@ -1,0 +1,36 @@
+set nu
+set nocompatible
+set showcmd
+set nobackup
+set noswapfile
+set incsearch
+set laststatus=2
+set ruler
+set ic
+set sc
+set hls
+set title
+set background=dark
+set clipboard=unnamedplus
+syntax enable
+filetype on
+
+
+
+
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tomasr/molokai'
+Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'blueyed/vim-diminactive'
+Plugin 'TagHighlight'
+call vundle#end()
+
+
+
+let g:diminactive_enable_focus=11
+colorscheme molokai
